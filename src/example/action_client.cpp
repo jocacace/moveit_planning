@@ -3,7 +3,6 @@
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
 #include "boost/thread.hpp"
 #include "geometry_msgs/PoseStamped.h"
-#include "moveit_planning/planning_request.h"
 
 #include <actionlib/server/simple_action_server.h>
 #include <moveit_planning/planning_actionAction.h>

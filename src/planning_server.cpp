@@ -74,6 +74,7 @@ planning::planning(std::string name) :
   _group = new moveit::planning_interface::MoveGroupInterface ("arm");
   //_group->setPlannerId("RRTkConfigDefault");
   _group->setMaxVelocityScalingFactor(0.1);
+	_group->setMaxAccelerationScalingFactor(0.1);
   //_group->setPlanningTime(_planning_time);
   _planning_scene_interface = new moveit::planning_interface::PlanningSceneInterface();
 

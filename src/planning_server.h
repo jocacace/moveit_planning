@@ -31,7 +31,7 @@
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
 #include "boost/thread.hpp"
 #include "geometry_msgs/PoseStamped.h"
-#include "moveit_planning/planning_request.h"
+
 #include <actionlib/server/simple_action_server.h>
 #include <moveit_planning/planning_actionAction.h>
 
@@ -42,8 +42,6 @@ class planning {
     planning(std::string name);
     void run();
     void get_cartesian_position();
-    bool plan_and_move( moveit_planning::planning_request::Request &req,
-                                  moveit_planning::planning_request::Response &res );
     void executeCB(const moveit_planning::planning_actionGoalConstPtr &goal) ;
 
   private:
